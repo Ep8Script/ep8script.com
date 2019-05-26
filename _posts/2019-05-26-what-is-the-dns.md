@@ -1,6 +1,6 @@
 ---
 title: "What IS the 4TU DNS?"
-category: 4tu
+category: fortheusers
 ---
 
 You may be wondering (for some reason), what exactly *is* the For The Users DNS server? Here's a little backstory on how it all came together, and some of the things it can do.
