@@ -24,7 +24,7 @@ defaults:
             author_legal: "Jessica"
 
 permalink: pretty
-title: "Ep8Script's blog"
+title: "Ep8Script's Blog"
 paginate: 5
 plugins: [jekyll-paginate]
 url: "http://ep8script.com"

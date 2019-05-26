@@ -124,10 +124,6 @@ body {
             }
         }
     }
-    .disqus-wrapper {
-        padding: 1em 2em;
-        border-top: $faint-border solid 2px;
-    }
 }
 
 .emoji {
@@ -158,6 +154,7 @@ body {
             color: $content-title-text-colour;
         }
         a {
+			margin-top: 0.55em;
             display: block;
             color: $content-info-text-colour;
         }
