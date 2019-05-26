@@ -1,0 +1,222 @@
+//Resets
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+body {
+    //Inherited stuff
+    font: $base-font-size $base-font-family;
+    line-height: $base-line-height;
+    color: #F00; //debugging; will make problems obvious
+
+    //Colours
+    background: $page-background;
+
+    //Layout
+    min-height: 100vh;
+}
+
+#page-wrapper {
+    //Layout
+    width: $page-width;
+    @include respond-to(medium-screens) { width: $page-width-mobile; }
+    margin: auto;
+}
+
+#page-wrapper-inner {
+    @include respond-to(wide-screens) {
+        margin-left: -$page-element-margins;
+    }
+    @include respond-to(wide-screens) {
+        //Flexbox!
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+#page-content {
+    @include page-element;
+
+    @include respond-to(wide-screens) {
+        flex: $content-area-flex-ratio 0 $content-area-min-width;
+        min-width: $content-area-min-width;
+        margin-left: $page-element-margins;
+    }
+    @include respond-to(medium-screens) {
+        width: 100%;
+    }
+
+    .text {
+        //Layout
+        padding: 1em 2em;
+        p, section, ul {
+            margin-bottom: 1em;
+        }
+        ul {
+            margin-left: 1em;
+        }
+        :last-child {
+            margin-bottom: 0;
+        }
+
+        //Colours
+        color: $content-area-text-colour;
+    }
+
+    .post-text {
+        img {
+            width: 100%;
+        }
+    }
+
+    .header {
+        padding: 1em 2em;
+        border-bottom: $accent-border solid 3px;
+
+        .title {
+            color: $content-area-text-colour;
+            text-decoration: none;
+            font-size: $content-title-font-size;
+            line-height: $content-title-line-height;
+        }
+
+        .info {
+            color: $content-info-text-colour;
+            margin-top: 0.5em;
+
+            a {
+                color: $content-info-text-colour;
+            }
+            .date {
+                float: right;
+            }
+            .category::before {
+                content: "- ";
+            }
+            .tags::before {
+                content: "- ";
+            }
+        }
+    }
+    .readmore {
+        color: $content-info-text-colour;
+    }
+    #index-paginator {
+        .page-select {
+            width: 100%;
+            text-align: center;
+            padding: 1em 0em;
+            color: $content-info-text-colour;
+            a {
+                color: $content-info-text-colour;
+            }
+
+            .pageno {
+                padding: 0em 1em;
+            }
+        }
+    }
+    .disqus-wrapper {
+        padding: 1em 2em;
+        border-top: $faint-border solid 2px;
+    }
+}
+
+.emoji {
+    height: $base-line-height !important;
+    vertical-align: bottom;
+    width: $base-line-height !important;
+}
+
+//Maybe set a max-width on this?
+#page-sidebar {
+    @include page-element;
+
+    width: 100%;
+
+    @include respond-to(wide-screens) {
+        width: $sidebar-width;
+        flex: $sidebar-flex-ratio 0 auto;
+        margin-left: $page-element-margins;
+    }
+
+    .recent-posts {
+        padding: 1em;
+        padding-top: 0.25em;
+
+        .title {
+            //TODO variablise these
+            font: 2em $content-title-font-family;
+            color: $content-title-text-colour;
+        }
+        a {
+            display: block;
+            color: $content-info-text-colour;
+        }
+    }
+
+    .kofi-button {
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: 36px;
+
+        margin-bottom: 1.5em;
+
+        a {
+            display: block;
+            height: 100%;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .ad {
+        width: 100%;
+        max-width: 250px;
+        height: 190px;
+        display: block;
+        margin: auto;
+        border: solid 4px $page-background;
+    }
+    .ad-text {
+        text-align: center;
+        font-size: 0.75em;
+        line-height: normal;
+        color: $content-info-text-colour;
+        a {
+            color: inherit;
+        }
+
+        margin-bottom: 1em;
+    }
+
+    //Sandbox Twitter - it ruins a lot left to its own devices
+    /*.twitter-timeline-wrap {
+        display: block;
+        height: 300px;
+        width: $sidebar-width;
+        overflow: hidden;
+        color: #000;
+        width: 100%;
+        #twitter-noscript {
+            padding: 1em;
+            width: 100%;
+            text-align: center;
+        }
+    }*/
+}
+
+.invis {
+    display: none;
+}

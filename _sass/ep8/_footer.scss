@@ -1,0 +1,20 @@
+#page-footer {
+	width: $page-width;
+	margin: auto;
+	margin-top: $page-element-margins;
+	margin-bottom: $page-element-margins;
+
+	text-align: center;
+	color: $footer-text-color;
+
+	a {
+		color: $footer-text-color;
+	}
+
+
+	.copyright {
+		img {
+			margin-top: 5px;
+		}
+	}
+}

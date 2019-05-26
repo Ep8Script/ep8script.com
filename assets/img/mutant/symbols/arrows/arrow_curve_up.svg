@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.2.3</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+<rect id="arrow_curve_up" x="0" y="0" width="32" height="32" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="0" width="32" height="32"/></clipPath><g clip-path="url(#_clip1)"><g id="outline"><path d="M0,8c0,-4.418 3.582,-8 8,-8c4.887,0 11.113,0 16,0c4.418,0 8,3.582 8,8c0,4.887 0,11.113 0,16c0,4.418 -3.582,8 -8,8c-4.887,0 -11.113,0 -16,0c-4.418,0 -8,-3.582 -8,-8c0,-4.887 0,-11.113 0,-16Z"/></g><g id="emoji"><path d="M2,8c0,-1.591 0.632,-3.117 1.757,-4.243c1.126,-1.125 2.652,-1.757 4.243,-1.757c4.724,0 11.276,0 16,0c1.591,0 3.117,0.632 4.243,1.757c1.125,1.126 1.757,2.652 1.757,4.243c0,4.724 0,11.276 0,16c0,1.591 -0.632,3.117 -1.757,4.243c-1.126,1.125 -2.652,1.757 -4.243,1.757c-4.724,0 -11.276,0 -16,0c-1.591,0 -3.117,-0.632 -4.243,-1.757c-1.125,-1.126 -1.757,-2.652 -1.757,-4.243c0,-4.724 0,-11.276 0,-16Z" style="fill:#808080;"/><path d="M18,13l-5,0l7,-7l7,7l-5,0l0,4.006c-0.002,0.333 -0.019,0.664 -0.056,0.994c-0.077,0.694 -0.236,1.378 -0.471,2.035c-0.485,1.353 -1.296,2.583 -2.35,3.561c-0.943,0.876 -2.074,1.544 -3.296,1.949c-0.911,0.301 -1.862,0.449 -2.821,0.455l-5.006,0l0,-4c1.708,0 3.416,0.03 5.124,-0.002c0.574,-0.017 1.14,-0.127 1.676,-0.333c0.765,-0.296 1.453,-0.781 1.988,-1.402c0.413,-0.479 0.733,-1.037 0.939,-1.635c0.174,-0.504 0.263,-1.033 0.273,-1.566l0,-0.068l0,-3.994Z" style="fill:#fff;"/></g></g></svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.2.3</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+<rect id="arrows_clockwise" x="0" y="0" width="32" height="32" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="0" width="32" height="32"/></clipPath><g clip-path="url(#_clip1)"><g id="outline"><path d="M0,24c0,4.418 3.582,8 8,8c4.887,0 11.113,0 16,0c4.418,0 8,-3.582 8,-8c0,-4.887 0,-11.113 0,-16c0,-4.418 -3.582,-8 -8,-8c-4.887,0 -11.113,0 -16,0c-4.418,0 -8,3.582 -8,8c0,4.887 0,11.113 0,16Z"/></g><g id="emoji"><path d="M2,24c0,1.591 0.632,3.117 1.757,4.243c1.126,1.125 2.652,1.757 4.243,1.757c4.724,0 11.276,0 16,0c1.591,0 3.117,-0.632 4.243,-1.757c1.125,-1.126 1.757,-2.652 1.757,-4.243c0,-4.724 0,-11.276 0,-16c0,-1.591 -0.632,-3.117 -1.757,-4.243c-1.126,-1.125 -2.652,-1.757 -4.243,-1.757c-4.724,0 -11.276,0 -16,0c-1.591,0 -3.117,0.632 -4.243,1.757c-1.125,1.126 -1.757,2.652 -1.757,4.243c0,4.724 0,11.276 0,16Z" style="fill:#808080;"/><path d="M16,13l-4,0l0,6.995c0.003,0.462 0.079,0.919 0.234,1.354c0.21,0.586 0.558,1.12 1.009,1.549c0.402,0.383 0.885,0.68 1.408,0.868c0.418,0.149 0.856,0.225 1.299,0.234l0.06,0l-0.02,3c-0.112,-0.001 -0.225,-0.004 -0.337,-0.009c-0.773,-0.043 -1.534,-0.204 -2.253,-0.492c-0.905,-0.362 -1.73,-0.913 -2.411,-1.611c-0.719,-0.738 -1.272,-1.634 -1.607,-2.609c-0.244,-0.706 -0.368,-1.446 -0.381,-2.192l-0.001,-0.082l0,-7.005l-4,0l5.5,-5.5l5.5,5.5Zm4.014,6c0.023,-2.383 0.057,-4.767 -0.017,-7.149c-0.018,-0.426 -0.099,-0.846 -0.248,-1.245c-0.211,-0.569 -0.553,-1.086 -0.992,-1.504c-0.402,-0.383 -0.885,-0.68 -1.408,-0.868c-0.437,-0.156 -0.895,-0.231 -1.358,-0.234l0.018,-3c0.026,0 0.052,0 0.078,0.001c0.804,0.014 1.599,0.158 2.353,0.438c1.103,0.41 2.096,1.101 2.864,1.992c0.596,0.693 1.054,1.502 1.342,2.37c0.234,0.708 0.349,1.449 0.354,2.194l0,7.005l4,0l-5.5,5.5l-5.5,-5.5l4.014,0Z" style="fill:#fff;"/></g></g></svg>

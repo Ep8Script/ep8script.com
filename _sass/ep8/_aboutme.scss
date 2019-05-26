@@ -1,0 +1,19 @@
+//Stuff specific to the aboutme page
+
+.bio-container {
+    overflow: auto;
+
+    .pfp {
+        width: 150px;
+        height: 150px;
+        float: left;
+        margin-right: 1em;
+    }
+
+    .bio-text:before {
+        content: "";
+        width: 100px;
+        display: block;
+        overflow: hidden;
+    }
+}

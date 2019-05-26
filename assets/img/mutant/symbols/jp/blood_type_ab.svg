@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+<metadata>
+<rdf:RDF xmlns:cc="http://web.resource.org/cc/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc = "http://purl.org/dc/elements/1.1/"
+         >
+
+     <rdf:Description rdf:about="">
+       <dc:title>Mutant Standard emoji v0.2.3</dc:title>
+     </rdf:Description>
+
+    <cc:work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <cc:attributionName>Dzuk</cc:attributionName>
+        <cc:attributionURL>http://mutant.tech/</cc:attributionURL>
+    </cc:work>
+
+</rdf:RDF>
+</metadata>
+<rect id="blood_type_ab" x="0" y="0" width="32" height="32" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="0" width="32" height="32"/></clipPath><g clip-path="url(#_clip1)"><g id="outline"><path d="M32,8c0,-4.418 -3.582,-8 -8,-8c-4.887,0 -11.113,0 -16,0c-4.418,0 -8,3.582 -8,8c0,4.887 0,11.113 0,16c0,4.418 3.582,8 8,8c4.887,0 11.113,0 16,0c4.418,0 8,-3.582 8,-8c0,-4.887 0,-11.113 0,-16Z"/></g><g id="emoji"><path d="M30,8c0,-1.591 -0.632,-3.117 -1.757,-4.243c-1.126,-1.125 -2.652,-1.757 -4.243,-1.757c-4.724,0 -11.276,0 -16,0c-1.591,0 -3.117,0.632 -4.243,1.757c-1.125,1.126 -1.757,2.652 -1.757,4.243c0,4.724 0,11.276 0,16c0,1.591 0.632,3.117 1.757,4.243c1.126,1.125 2.652,1.757 4.243,1.757c4.724,0 11.276,0 16,0c1.591,0 3.117,-0.632 4.243,-1.757c1.125,-1.126 1.757,-2.652 1.757,-4.243c0,-4.724 0,-11.276 0,-16Z" style="fill:#d72d35;"/><g><path d="M9.241,10.159l2.664,0l3.834,11.682l-2.25,0l-0.81,-2.52l-4.338,0l-0.828,2.52l-2.25,0l3.978,-11.682Zm-0.36,7.56l3.276,0l-1.62,-5.022l-1.656,5.022Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M17.809,10.159l4.716,0c1.296,0 2.298,0.306 3.006,0.918c0.672,0.564 1.008,1.29 1.008,2.178c0,0.66 -0.183,1.224 -0.549,1.692c-0.366,0.468 -0.879,0.798 -1.539,0.99c0.66,0.132 1.206,0.429 1.638,0.891c0.432,0.462 0.648,1.053 0.648,1.773c0,1.44 -0.714,2.424 -2.142,2.952c-0.54,0.192 -1.224,0.288 -2.052,0.288l-4.734,0l0,-11.682Zm4.68,9.828c0.684,0 1.179,-0.138 1.485,-0.414c0.306,-0.276 0.459,-0.642 0.459,-1.098c0,-0.456 -0.159,-0.825 -0.477,-1.107c-0.318,-0.282 -0.807,-0.423 -1.467,-0.423l-2.556,0l0,3.042l2.556,0Zm-2.556,-4.896l2.502,0c0.636,0 1.116,-0.138 1.44,-0.414c0.324,-0.276 0.486,-0.651 0.486,-1.125c0,-0.474 -0.159,-0.852 -0.477,-1.134c-0.318,-0.282 -0.795,-0.423 -1.431,-0.423l-2.52,0l0,3.096Z" style="fill:#fff;fill-rule:nonzero;"/></g></g></g></svg>

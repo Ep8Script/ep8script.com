@@ -1,0 +1,44 @@
+---
+title: Front Page
+do_sitemap: true
+frontpage: true
+excerpt: "Hi! I'm Ash, an Aussie developer working on the Wii U. This is my blog!"
+---
+<div id="index-paginator" class="h-feed">
+{% for post in paginator.posts %}
+<div class="h-entry post">
+	<div class="header">
+		<a class="u-url u-uid title" href="{{post.url |  static_url}}">
+			<span class="p-name">
+				{{post.title | escape}}</span></a>
+		<div class="info">
+			<span class="p-author h-card author"><a class="u-url u-uid" href="{{post.author_card}}">
+				{{post.author | escape}}</a></span>
+			<span class="p-category category">
+				{{post.category | escape}}</span>
+			<span class="p-category tags">
+				{% for tag in post.tags %}
+					{{tag | escape}}
+				{% endfor %}
+			</span>
+			<time class="dt-published date" datetime="{{post.date | date_to_xmlschema}}">
+				{{post.date | date_to_long_string }}</time>
+		</div>
+	</div>
+	<div class="p-summary text">
+		{{post.excerpt}}
+		<a class="readmore" href="{{post.url |  static_url}}">Read more</a>
+	</div>
+</div>
+{% endfor %}
+<div class="page-select">
+	<a class="prev" href="{{paginator.previous_page_path}}">Prev</a>
+	<span class="pageno">Page {{paginator.page}} of {{paginator.total_pages}}</span>
+	<a class="next" href="{{paginator.next_page_path}}">Next</a>
+</div>
+
+<data class="p-name invis" value="{{site.title}} - Posts"></data>
+<span class="p-author h-card invis"><a class="u-url u-uid invis" href="{{page.author_card}}">{{page.author_legal}}</a></span>
+<a class="u-url invis" href="{{page.url}}"></a>
+
+</div>

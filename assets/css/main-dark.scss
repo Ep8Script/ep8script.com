@@ -1,0 +1,38 @@
+---
+#Main css sheet, light theme
+---
+
+//Font
+$base-font-size: 18px;
+$base-line-height: 1.4em;
+$base-font-family: Exo2, sans-serif;
+$content-title-font-family: Exo2, sans-serif;
+$content-title-font-size: $base-font-size * 2;
+$content-title-line-height: 1em;
+$site-title-font-size: $base-font-size * 3;
+$site-title-font-family: $content-title-font-family;
+$site-nav-font-size: $base-font-size * 1;
+$site-nav-font-family: $content-title-font-family;
+
+//Colours
+$page-background: #001010; //TODO
+$page-element-shadow-colour: #000;
+$page-element-background: #0F1C1E;
+$content-area-text-colour: #00D699; //TODO
+$content-title-text-colour: #00D699;
+$site-title-text-colour: #00B679;
+$site-nav-text-colour: #00B679;
+$content-info-text-colour: #00A669;
+$accent-border: #00B679;
+$faint-border: darken($page-element-background, 20%);
+
+$footer-text-color: $content-area-text-colour;
+
+a {
+    color: $content-area-text-colour;
+}
+a:visited {
+    color: $content-info-text-colour;
+}
+
+@import "ep8";

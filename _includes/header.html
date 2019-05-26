@@ -1,0 +1,18 @@
+<header id="page-header">
+	<a class="title" href="{{"/" | relative_url}}">{{site.title}}</a>
+	{% if page.permalink == "aboutme/" %}
+		{% assign header_thispage = "aboutme" %}
+	{% else %}
+		{% assign header_thispage = "blog" %}
+	{% endif %}
+	<nav>
+		<a href="{{"/" | relative_url}}"
+		{% if header_thispage == "blog" %}
+			class="current"
+		{% endif %}><span>Blog</span></a>
+		<a href="{{"/aboutme" | relative_url }}"
+		{% if header_thispage == "aboutme" %}
+			class="current"
+		{% endif %}><span>About Me</span></a>
+	</nav>
+</header>

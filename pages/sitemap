@@ -1,0 +1,8 @@
+---
+permalink: /sitemap
+layout: none
+---
+{% for tpage in site.pages %}{% if tpage.do_sitemap %}{{ tpage.url | absolute_url }}
+{% endif %}{% endfor %}
+{% for tpage in site.posts %}{% if tpage.do_sitemap %}{{ tpage.url | absolute_url }}
+{% endif %}{% endfor %}

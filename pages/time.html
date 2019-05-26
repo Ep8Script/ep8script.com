@@ -1,0 +1,71 @@
+---
+permalink: time/
+layout: none
+---
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js" integrity="sha384-2HZQgruoZ9WYoMX2ggiDbr1oZdeQIiVXLXeyZLJ1JgiOugVLfDyNe3st/Kop/dUT" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.13/moment-timezone-with-data-2012-2022.js" integrity="sha384-7DhvOgHfwEZ8aORPpemhODW2cX27ahk9dtyaUGV16LgFb4XJEmZjQO0y8ANLIjry" crossorigin="anonymous"></script>
+<link href="{{'/assets/fonts.css' | relative_url }}" rel="stylesheet">
+<style>
+html {
+	background-color: #140C2D;
+}
+body {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0;
+}
+.flavortext {
+	color: white;
+	text-align: center;
+	font-size: 450%;
+	font-family: Exo2, sans-serif;
+	padding-top: 10px;
+}
+.text-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#dtcontainer {
+	flex-grow: 6;
+	flex-direction: column;
+}
+#date {
+	color: white;
+	text-align: center;
+	font-size: 200%;
+	font-family: Exo2, sans-serif;
+}
+#time {
+	color: #ff6000;
+	text-align: center;
+	font-size: 700%;
+	font-family: Exo2, sans-serif;
+	margin-top: 5px;
+	font-weight: bold;
+	margin-bottom: 20%;
+}
+</style>
+</head>
+<body>
+<div class="flavortext text-container"><div>What time is it in Sydney?</div></div>
+<div id="dtcontainer" class="text-container">
+	<div id="date" class="text-container"><div>Loading...</div></div>
+	<div id="time" class="text-container"><div>Loading...</div></div>
+</div>
+<script>
+	function updateTime() {
+		var tz = moment.tz(new Date(), moment.tz.guess()).tz("Australia/Sydney")
+		document.getElementById("date").innerHTML = tz.format("dddd, MMMM Do YYYY");
+		document.getElementById("time").innerHTML = tz.format("h:mm:ss a");
+	}
+	updateTime();
+	window.setInterval(updateTime, 500);
+</script>
+</body>
+</html>

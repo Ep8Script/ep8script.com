@@ -1,0 +1,31 @@
+---
+#Main css sheet, light theme
+---
+
+//Font
+$base-font-size: 18px;
+$base-line-height: 1.4em;
+$base-font-family: Exo2, sans-serif;
+$content-title-font-family: Exo2, sans-serif;
+$content-title-font-size: $base-font-size * 2;
+$content-title-line-height: 1em;
+$site-title-font-size: $base-font-size * 3;
+$site-title-font-family: $content-title-font-family;
+$site-nav-font-size: $base-font-size * 1;
+$site-nav-font-family: $content-title-font-family;
+
+//Colours
+$page-background: #C0C0C0; //TODO
+$page-element-shadow-colour: #AAA;
+$page-element-background: #EEE;
+$content-area-text-colour: #000; //TODO
+$content-title-text-colour: #000;
+$site-title-text-colour: #000;
+$site-nav-text-colour: #000;
+$content-info-text-colour: #555;
+$accent-border: #00F;
+$faint-border: darken($page-element-background, 20%);
+
+$footer-text-color: darken($page-background, 35%);
+
+@import "ep8";

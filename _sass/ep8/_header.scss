@@ -1,0 +1,70 @@
+#page-header {
+	@include page-element;
+
+	//Layout
+	width: $header-width;
+	min-height: $header-min-height;
+	@include respond-to(medium-screens) { width: $header-width-mobile; }
+	margin: auto;
+	margin-top: $page-element-margins;
+
+	@include respond-to(wide-screens) { padding-left: 2em; }
+	display: flex;
+	flex-flow: row wrap;
+	@include respond-to(medium-screens) {
+		flex-flow: column nowrap;
+		padding-top: 0.5em;
+	}
+	.title {
+		//Layout
+		align-self: center;
+
+		font: $site-title-font-size $site-title-font-family;
+		color: $content-title-text-colour;
+		text-decoration: none;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		outline: 0;
+
+		@include respond-to(medium-screens) {
+			flex-grow: 1;
+			text-align: center;
+		}
+	}
+	nav {
+		flex-grow: 1;
+		display: flex;
+		@include respond-to(wide-screens) { justify-content: flex-end; }
+		@include respond-to(medium-screens) { min-height: 3em; }
+		a {
+			flex-grow: 1;
+			@include respond-to(wide-screens) { max-width: $header-nav-max-width; }
+			border-bottom: transparent 3px solid;
+			padding-top: 3px; //counteract border for centering
+			&.current {
+				border-bottom: $accent-border 3px solid;
+			}
+			transition: 0.15s linear;
+			&:active {
+				background: darken($page-element-background, 10%);
+			}
+			&:hover {
+				background: darken($page-element-background, 10%);
+			}
+			&:focus {
+				background: darken($page-element-background, 10%);
+			}
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			span {
+				color: $site-nav-text-colour;
+				font: $site-nav-font-size $site-title-font-family;
+			}
+			text-decoration: none;
+			outline: 0;
+		}
+	}
+}

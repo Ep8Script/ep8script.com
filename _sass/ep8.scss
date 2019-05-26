@@ -1,0 +1,48 @@
+//Font and colour settings are now in /assets/css/*.scss
+
+//Layout
+$page-width: 80vw;
+$page-element-margins: 20px;
+$content-area-flex-ratio: 3;
+$header-width: $page-width;
+$header-min-height: 5em;
+$header-nav-max-width: $header-min-height * 2;
+$content-area-min-width: 500px;
+$sidebar-width: 250px;
+$sidebar-flex-ratio: 1;
+
+$break-large: 800px;
+
+$page-width-mobile: 100vw;
+$header-width-mobile: $page-width-mobile;
+
+@mixin respond-to($media) {
+  @if $media == medium-screens {
+    @media only screen and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
+@mixin page-element {
+	background: $page-element-background;
+	box-shadow: 10px 10px 0 0 $page-element-shadow-colour;
+    margin-top: $page-element-margins;
+}
+
+@import
+	"ep8/base",
+	"ep8/header",
+	"ep8/footer",
+	"ep8/aboutme",
+    "ep8/atom-tl"
+;
+
+.disable-lr-padding {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.disable-top-padding {
+	padding-top: 0 !important;
+}

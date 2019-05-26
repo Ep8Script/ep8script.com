@@ -1,0 +1,111 @@
+
+#atom-header {
+    border-bottom: 3px solid $accent-border;
+
+    padding: 0.5em;
+
+    p {
+        color: $content-area-text-colour;
+    }
+
+    label {
+        color: $content-info-text-colour;
+        vertical-align: middle;
+    }
+    input {
+        color: $content-info-text-colour;
+        vertical-align: middle;
+    }
+}
+
+#atom-timeline {
+    height: 300px;
+    overflow-y: scroll;
+    border-bottom: 3px solid $faint-border;
+}
+
+.atom-entry {
+    padding: 0.5em;
+    border-bottom: 3px solid $faint-border;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    .atom-avi {
+        float: left;
+        margin-right: 0.5em;
+
+        border: 3px solid $faint-border;
+
+        width: $base-line-height * 2;
+        height: $base-line-height * 2;
+
+        overflow: hidden;
+
+        color: $content-info-text-colour;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .atom-infoline {
+        color: $content-area-text-colour;
+
+        .atom-email {
+            display: block;
+            color: $content-info-text-colour;
+        }
+        .atom-boost-true {
+            display: none;
+            &[data-atom-share="true"] {
+                display: unset;
+            }
+        }
+        .atom-boost-false {
+            display: none;
+            &[data-atom-share="false"] {
+                display: unset;
+            }
+        }
+    }
+
+    .atom-summary-wrapper {
+        [data-atom-summary="false"] {
+            display: none;
+        }
+
+        label {
+            color: $content-info-text-colour;
+        }
+        input {
+            color: $content-info-text-colour;
+        }
+
+        input[type="checkbox"][data-atom-summary="true"] ~ div {
+            visibility: hidden;
+        }
+        input[type="checkbox"][data-atom-summary="true"]:checked ~ div {
+            visibility: visible;
+        }
+
+        .atom-content {
+            clear: both;
+            color: $content-area-text-colour;
+        }
+    }
+
+
+
+    .atom-url {
+        color: $content-info-text-colour;
+        span[data-atom-media="false"] {
+            display: none;
+        }
+    }
+}
+
+#atom-entry-template {
+    display: none;
+}
