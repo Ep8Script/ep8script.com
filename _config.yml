@@ -8,7 +8,7 @@ defaults:
             do_sitemap: true
             excerpt_seperator: <!--more-->
             category: general
-            thumb: "http://ep8script.com/assets/img/ep8.png"
+            thumb: "https://ep8script.com/assets/img/ep8.png"
     -
         scope:
             path: ""
@@ -19,7 +19,7 @@ defaults:
         scope:
             path: ""
         values:
-            author_card: "http://ep8script.com/aboutme/"
+            author_card: "https://ep8script.com/aboutme/"
             author: "Ep8Script"
             author_legal: "Jessica"
 
@@ -27,6 +27,6 @@ permalink: pretty
 title: "Ep8Script's Blog"
 paginate: 5
 plugins: [jekyll-paginate]
-url: "http://ep8script.com"
-canon-url: "http://ep8script.com"
+url: "https://ep8script.com"
+canon-url: "https://ep8script.com"
 encoding: utf-8
